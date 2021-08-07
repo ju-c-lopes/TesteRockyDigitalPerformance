@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 620px) {
+    /* Estilos para o Header */
+    #index {
+        background: url(./../mobile/s1-mobile.png) no-repeat 100%;
+        background-size: cover;
+        background-position: top 0 center;
+        height: 650px;
+    }
+    .logo {
+        position: relative;
+        top: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 112px;
+        height: 27px;
+    }
+    /* Menu hamburger e navegação */
+    .burger {
+        background: url(./../mobile/menu.png) no-repeat;
+        background-size: contain;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 5vw;
+        left: 3vw;
+        padding: 0 15px 0 15x;
+        text-align: center;
+        z-index: 2;
+    }
+    #barra {
+        position: absolute;
+        width: 60%;
+        height: 440px;
+        border-radius: 0 25px 25px 0;
+        top: 0;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        -moz-backdrop-filter: blur(10px);
+        z-index: 1;
+        visibility: hidden;
+        overflow: hidden;
+    }
+
+    .ul {
+        position: absolute;
+        top: 8vw;
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        box-shadow: inset -20px -7px 35px 3px rgba(170, 170, 170, .8);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        border-radius: 0 25px 25px 0;
+        padding-top: 50px;
+        padding: 20px;
+        z-index: 2;
+        visibility: hidden;
+    }
+    .ul a {
+        text-decoration: none;
+    }
+    .link {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #ffffff;
+        border-top: solid 1px #606060;
+        padding: 20px;
+        text-decoration: none;
+        white-space: nowrap;
+        z-index: 2;
+    }
+    #servbt, #difbt {
+        background: none;
+        border: none;
+        box-sizing: border-box;
+    }
+    #servbt img, #difbt img {
+        width: 10px;
+        height: 10px;
+        margin-left: 5px;
+    }
+    .submenu {
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 0.6em;
+        line-height: 2em;
+        visibility: hidden;
+    }
+    #serv {
+        height: 0;
+        margin-top: 0;
+    }    
+    #dif {
+        height: 0;
+        margin-top: 0;
+    }
+    /* Div central h1 e botão contato */
+    #front {
+        text-align: center;
+        top: 150px;
+        display: flexbox;
+        position: relative;
+        flex-basis: content;
+        flex-direction: column;
+        margin: 0 0 0 0;
+    }
+    #front h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 20px 0 40px 0;
+    }
+    #front p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        color: #ffffff;
+        width: 280px;
+        text-align: center;
+        margin: 70px auto 90px auto;
+    }
+    #front p span {
+        color: #eeff00;
+    }    
+    #front .bt {
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #20b2aa;
+        width: 250px;
+        height: 50px;
+        line-height: 50px;
+        margin: 0 auto 0 auto;
+        border-style: hidden;
+        border-radius: 25px;
+    }
+    #front .bluebt {
+        text-decoration: none;
+    }
+
+    /* =============== ARTICLE SOBRE =============== */
+
+    #sobre {
+        background-color: white;
+        padding: 40px;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    #sobre div {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100;
+        margin-top: 20px;
+        padding: 20px;
+        box-shadow: 
+            10px 0 10px rgba(0, 0, 0, .2),
+            -10px 0 10px rgba(0, 0, 0, .2),
+            0 -10px 10px rgba(0, 0, 0, .2),
+            0 10px 10px rgba(0, 0, 0, .2)
+    ;}
+    #sobre p {
+        margin: 30px auto 30px auto;
+        text-align: justify;
+    }
+
+    /* =============== ARTICLE SERVIÇOS =============== */
+
+    #servicos {
+        margin: 0;
+        margin-top: 30px;
+        padding: 40px 40px 0 40px;
+    }
+    .s3 {
+        height: 85vw;
+        margin-bottom: 30px;
+    }
+    .s3 .bg {
+        width: 100%;
+        height: 85vw;
+        filter: brightness(50%);
+        z-index: 0;
+        margin-bottom: 30px;
+    }
+    .s3 h4 {
+        color: #eeff00;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        position:relative;
+        top: -85vw;
+        margin: 0 auto 0 auto;
+        z-index: 1;
+    }
+    .s3 p {
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 3vw;
+        text-align: center;
+        position: relative;
+        top: -75vw;
+        margin: 20px;
+        z-index: 1;
+    }
+
+    /* =============== ARTICLE DIFERENCIAIS =============== */
+
+    #diferenciais {
+        margin: 0;
+        margin-top: 30px;
+        padding: 40px;
+        padding-bottom: 40px;
+    }
+    .s4 {
+        height: 90vw;
+        display: block;
+        margin-bottom: 30px;
+    }
+    .s4 .bg {
+        width: 100%;
+        height: 90vw;
+        margin-bottom: 30px;
+        filter: brightness(50%);
+        z-index: 0;
+    }
+    .s4 .up {
+        position: relative;
+        top: -87vw;
+        text-align: center;
+        margin: 0 auto 0 auto;
+        width: 50%;
+        z-index: 1;
+    }
+    .s4 p {
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 4vw;
+        text-align: center;
+        position: relative;
+        top: -78vw;
+        margin: 0 20px 0 20px;
+        z-index: 1;
+    }
+
+    /* =============== RODAPÉ CONTATO =============== */
+
+    #contato {
+        background: #eeff00;
+        padding: 60px 0 60px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        overflow-y: hidden;
+    }
+
+    #media {
+        background: #000000;
+        width: 100%;
+        height: 45%;
+        padding: 20px;
+        overflow-y: hidden;
+    }
+    #form {
+        background: #000000;
+        width: 100%;
+        height: 80vw;
+    }
+    #formbox {
+        background: #606060;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    /* linha logo facebook linkedin */
+    .logomedia {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .div1{
+        grid-column: 1/6 span 3;
+    }
+    .div1 .rocky{
+        height: 100%;
+        width: 100%;
+    }
+    .div2{
+        grid-column: 5/6;
+        width: 100%;
+    }
+    .div2 .face {
+        margin-left: 70%;
+        width: 30%;
+    }
+    .div3{
+        grid-column: 6/6;
+        width: 100%;
+    }
+    .div3 .linke {
+        margin-left: 30%;
+        width: 30%;
+    }
+
+    /* linha email phone */
+    .mailfone {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .mail {
+        grid-column: 1/2;
+        display: inline-flex;
+        border-right: solid 1px white;
+    }
+    .mail img {
+        width: 70%;
+    }
+    .mail p a  {
+        color: #ffffff;
+        width: 70%;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+    .phone {
+        grid-column: 2/2;
+        display: inline-flex;
+        justify-self: center;
+    }
+    .phone img {
+        width: 70%;
+    }
+    .phone p a {
+        color: #ffffff;
+        width: 70%;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+
+    /* linha endereço */
+    .map a{
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+    .map img {
+        width: 3%;
+    }
+    .map p {
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 0.8em;
+        margin: 0 15px 0 15px;
+    }
+
+    /* Texto após contatos */
+    .txt {
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 1em;
+        width: 100%;
+        text-align: center;
+        overflow-y: hidden;
+    }
+    .first {
+        margin: 10px auto 0 auto;
+        width: 85%;
+    }
+    .second {
+        margin: 10px auto 0 auto;
+        color: #eeff00;
+        width: 90%;
+    }
+    .third {
+        margin: 10px auto 0 auto;
+        color: #20b2aa;
+        width: 90%;
+    }
+
+    /* =============== RODAPÉ FORMULÁRIO =============== */
+
+    form {
+        height: 100%;
+    }
+    fieldset {
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+        align-content: space-around;
+        border: none;
+        height: 100%;
+        padding: 20px 20px 20px 20px;
+        box-sizing: border-box;
+    }
+    legend {
+        color: rgba(0, 0, 0, 0);
+        width: 0;
+        height: 0;
+    }
+    label {
+        height: 0;
+    }
+    #nome, #mail, #invest, #msg, #btform {
+        display: block;
+        padding: 15px;
+    }
+    #invest {
+        color: #707070;
+        appearance: none;
+        background: #ffffff;
+    }
+    #msg {
+        height: 20vw;
+    }
+    #btform {
+        color: #ffffff;
+        background: #20b2aa;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
